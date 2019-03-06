@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Dani Demeter</title>
+    <meta charset="UTF-8">
+  </head>
+  <body id="body" scroll="no">
+      <!-- <script src="libraries/p5.js"></script> -->
+      <!-- <script src="libraries/p5.dom.js"></script> -->
+      <!-- <script src="colorPalette.js"></script> -->
+      <!-- <link rel="stylesheet" href="libraries/bootstrap.css"> -->
+      <link rel="stylesheet" href="index.css">
+      <script src="libraries/jquery.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" id="navbar-brand">
+          <img src="libraries/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Dani Demeter
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                 <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">About Me</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Resume</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <!-- CAROUSEL -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner" id="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block" id="carousel-item" src="resources/Offworld.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block" id="carousel-item" src="libraries/1.gif" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block" id="carousel-item" src="libraries/2.gif" alt="Third slide">
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+         </a>
+      </div>
+  </body>
+</html>
