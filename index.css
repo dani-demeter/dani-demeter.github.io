@@ -51,10 +51,10 @@
    /* height: auto; */
 }
 #perma-top p{
-   font-size: 10vh;
-   margin-top: -20vh;
+   font-size: 10vmax;
+   margin-top: -100vh;
    color: var(--mywhite);
-   -webkit-text-stroke: 1px var(--myrasp);
+   -webkit-text-stroke: 0.2vmax var(--myrasp);
 }
 
 /*  */
@@ -207,4 +207,10 @@
    width: 95vmin;
    height: auto;
    margin: 100 auto;
+}
+
+@media only screen and (max-device-width: 800px) {
+  #perma-top {
+    background-attachment: scroll;
+  }
 }
