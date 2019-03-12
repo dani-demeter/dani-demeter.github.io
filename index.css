@@ -50,6 +50,7 @@ html{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   min-width: 100%;
    /* background: -webkit-linear-gradient(top, var(--myblue), var(--myddblue)); */
 }
 
@@ -84,15 +85,22 @@ html{
    /* -webkit-text-stroke: 0.1vmax var(--myrasp); */
 }
 
+#scrollTo-wrapper{
+   margin-top: -13vh;
+   margin-left: 48vw;
+   display: inline-block;
+   height: 0;
+   vertical-align: middle;
+}
+
 #scrollTo{
-   transition-duration: 0.4s;
    background: url("resources/images/down-arrow.svg") no-repeat;
    background-size: 4vw;
    width: 4vw;
    height: 4vw;
    border: none;
-   margin-top: -13vh;
-   margin-left: 48vw;
+   /* margin-top: -13vh; */
+   /* margin-left: 48vw; */
    outline: none;
 }
 
