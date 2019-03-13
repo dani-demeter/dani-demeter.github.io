@@ -296,7 +296,7 @@ html{
   #perma-top {
     background-attachment: scroll;
   }
-  
+
   .toolbar-button{
      width: 33.33vw;
   }
@@ -308,7 +308,7 @@ html{
  }
 }
 
-@media only screen and (min-device-height: 625) {
+@media only screen and (min-devicheight: 625px) {
    .toolbar-button{
       font-size: 25px;
    }
