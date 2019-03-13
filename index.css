@@ -308,7 +308,7 @@ html{
  }
 }
 
-@media only screen and (min-devicheight: 625px) {
+@media only screen and (min-device-height: 625px) {
    .toolbar-button{
       font-size: 25px;
    }
