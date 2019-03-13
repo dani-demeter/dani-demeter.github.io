@@ -280,14 +280,13 @@ html{
    width: 95vmin;
    height: auto;
    margin: auto;
-   padding-bottom: 0;
+   padding-top: 100px;
 }
 
 #hex-big-wrapper{
-   padding-top: 100px;
-   margin-bottom: 0;
+   /* padding-top: 100px; */
    width: 100vw;
-   height: 100vh;
+   height: 90vh;
    background: -webkit-linear-gradient(top, var(--mywhite),#EFD7F4);
 }
 
