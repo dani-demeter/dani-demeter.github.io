@@ -12,6 +12,9 @@
    --mygold: #FFC700;
    --mysky: #4A7AB4;
    --myskylight: #8FB2CE;
+   --mybubbles: #E5F8FF;
+   --mycerulean: #007BA7;
+   --ghostwhite: #F9FDFF;
 }
 
 @font-face {
@@ -116,11 +119,11 @@ html{
    white-space: nowrap;
    vertical-align: middle;
    text-align: right;
-   background-color: var(--myorange);
+   background-color: var(--ghostwhite);     /*  TOOLBAR COLOR HERE */
 }
 
 #toolbar .active{
-   background-color: var(--mywhite);
+   background-color: var(--mybubbles);
 }
 
 .toolbar-button{
@@ -131,6 +134,8 @@ html{
    font-family: 'montserrat';
    font-size: 4vmin;
    background-color: transparent;
+   outline: none;
+   color: #1B264F;
 }
 
 #grid {
@@ -287,7 +292,8 @@ html{
    /* padding-top: 100px; */
    width: 100vw;
    height: 90vh;
-   background: -webkit-linear-gradient(top, var(--mywhite),#EFD7F4);
+   /* background: -webkit-linear-gradient(top, var(--mywhite),#1B264F); */
+   background: -webkit-linear-gradient(top, var(--mybubbles), var(--mycerulean)); /* BACKGROUND GRADIENT HERE */
 }
 
 
@@ -302,7 +308,7 @@ html{
 
   #toolbar .active{
      /* border-bottom: 2px solid var(--mywhite); */
-     border-left: 2px solid var(--mywhite);
+     border-left: 2px solid var(--mybubbles);
      /* border-right: 0px solid var(--mywhite); */
  }
 }
