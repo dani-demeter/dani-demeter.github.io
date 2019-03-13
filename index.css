@@ -291,10 +291,12 @@ html{
    background: -webkit-linear-gradient(top, var(--mywhite),#EFD7F4);
 }
 
+
 @media only screen and (max-device-width: 800px) {
   #perma-top {
     background-attachment: scroll;
   }
+  
   .toolbar-button{
      width: 33.33vw;
   }
@@ -304,5 +306,10 @@ html{
      border-left: 2px solid var(--mywhite);
      /* border-right: 0px solid var(--mywhite); */
  }
+}
 
+@media only screen and (min-device-height: 625) {
+   .toolbar-button{
+      font-size: 25px;
+   }
 }
