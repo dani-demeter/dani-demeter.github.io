@@ -13,10 +13,10 @@ $(document).ready(function() {
       $("#Portfolio-tab").addClass("active-content");
     });
 
-    $("#CV").click(function() {
+    $("#Resume").click(function() {
       $(".toolbar-button").removeClass("active");
-      $("#CV").addClass("active");
+      $("#Resume").addClass("active");
       $(".content-tab-wrapper").removeClass("active-content");
-      $("#CV-tab").addClass("active-content");
+      $("#Resume-tab").addClass("active-content");
     });
 });

@@ -19,9 +19,12 @@
 
 @font-face {
     font-family: 'montserrat';
-    src: url('resources/fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+    /* src: url('resources/fonts/montserrat-extralight-webfont.woff2') format('woff2'),
          url("resources/fonts/Montserrat-ExtraLight.otf") format("opentype"),
-         url('resources/fonts/montserrat-extralight-webfont.woff') format('woff');
+         url('resources/fonts/montserrat-extralight-webfont.woff') format('woff'); */
+   src: url('resources/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url("resources/fonts/Montserrat-Regular.otf") format("opentype"),
+        url('resources/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,6 +45,7 @@ html{
 #site-wrapper{
    position: absolute;
    overflow-x: hidden;
+   font-family: 'montserrat';
 }
 
 #perma-top{
@@ -67,11 +71,10 @@ html{
 }
 
 #profile-pic{
-   width: 50vmin;
-   height: 50vmin;
-   vertical-align: middle;
-   border-radius: 50%;
-   border: 4px solid var(--myrasp);
+   width: 30vmin;
+   height: 30vmin;
+   border-radius: 10%;
+   /* border: 4px solid var(--myrasp); */
    /* height: auto; */
 }
 
@@ -282,11 +285,21 @@ html{
 }
 
 .content-tab-wrapper{
-   width: 95vmin;
+   width: 100vw;
    height: auto;
    margin: auto;
    padding-top: 100px;
    display: none;
+}
+
+#Portfolio-tab{
+   width: 95vmin;
+}
+#AboutMe-tab{
+   padding-left: 20vw;
+   padding-right: 20vw;
+   padding-top: 10vh;
+   padding-bottom: 10vh;
 }
 
 #content-wrapper{
@@ -301,21 +314,58 @@ html{
    display: block !important;
 }
 
+.AboutMe-Image-Wrapper{
+   width: 30vw;
+   height: 70vh;
+   display: inline-block;
+   float: left;
+   text-align: center;
+}
 
-@media only screen and (max-device-width: 800px) {
+.AboutMe-Text-Wrapper{
+   width: 30vw;
+   height: 70vh;
+   display: inline-block;
+}
+
+.big-text{
+   font-size: 200%;
+}
+
+.highlight-text{
+   /* color: var(--myrasp); */
+}
+
+
+@media only screen and (max-device-width: 825px) {
   #perma-top {
     background-attachment: scroll;
   }
 
   .toolbar-button{
      width: 33.33vw;
+     font-size: 50px !important;
   }
 
   #toolbar .active{
-     /* border-bottom: 2px solid var(--mywhite); */
      border-left: 2px solid var(--mybubbles);
-     /* border-right: 0px solid var(--mywhite); */
- }
+  }
+
+  .AboutMe-Image-Wrapper{
+     width: 80vw;
+     height: auto;
+     text-align: center;
+  }
+
+  .AboutMe-Text-Wrapper{
+     width: 80vw;
+     height: auto;
+  }
+  #AboutMe-tab{
+     padding-left: 10vw;
+     padding-right: 10vw;
+     font-size: 50px !important;
+  }
 }
 
 @media only screen and (min-device-height: 625px) {
