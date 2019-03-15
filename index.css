@@ -281,19 +281,24 @@ html{
    filter: opacity(0%);
 }
 
-.hex-wrapper{
+.content-tab-wrapper{
    width: 95vmin;
    height: auto;
    margin: auto;
    padding-top: 100px;
+   display: none;
 }
 
-#hex-big-wrapper{
+#content-wrapper{
    /* padding-top: 100px; */
    width: 100vw;
    height: 90vh;
    /* background: -webkit-linear-gradient(top, var(--mywhite),#1B264F); */
    background: -webkit-linear-gradient(top, var(--mybubbles), var(--mycerulean)); /* BACKGROUND GRADIENT HERE */
+}
+
+#content-wrapper .active-content{
+   display: block !important;
 }
 
 

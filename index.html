@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
   </head>
   <body id="body">
-      <script src="libraries/jquery.js"></script>
+      <!-- <script src="libraries/jquery.js"></script> -->
       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
       <!-- <link rel="stylesheet" href="libraries/bootstrap.css"> -->
       <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
       <!-- <script src="libraries/boostrap.js"></script> -->
-      <script src="libraries/circletype.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <link rel="stylesheet" href="index.css">
       <script src="index.js"></script>
 
@@ -25,12 +25,15 @@
       <span id="scrollTo-wrapper"><input type="button" id="scrollTo" onClick="document.getElementById('toolbar').scrollIntoView();" /></span>
 
       <div id="toolbar">
-         <button type="button" class="toolbar-button" name="button">About Me</button>
-         <button type="button" class="toolbar-button active" name="button">Portfolio</button>
-         <button type="button" class="toolbar-button" name="button">CV</button>
+         <button type="button" class="toolbar-button active" id="AboutMe">About Me</button>
+         <button type="button" class="toolbar-button" id="Portfolio">Portfolio</button>
+         <button type="button" class="toolbar-button" id="CV">CV</button>
       </div>
-      <div id="hex-big-wrapper">
-         <div class="hex-wrapper">
+      <div id="content-wrapper">
+         <div class="content-tab-wrapper active-content" id="AboutMe-tab">
+            About Me coming soon
+         </div>
+         <div class="content-tab-wrapper" id="Portfolio-tab">
             <ul id="grid" class="clear">
                <li>
                   <a href="#">
@@ -79,8 +82,11 @@
                   </a>
                </li>
             </div>
+         <div class="content-tab-wrapper" id="CV-tab">
+            CV also coming soon
          </div>
       </div>
+   </div>
 
 
 
