@@ -1,7 +1,4 @@
 $(document).ready(function() {
-   if($(window).width() <= 825){
-      setTimeout(function() {window.scrollTo(0, 1)}, 100);
-   }
     $("#AboutMe").click(function() {
       $(".toolbar-button").removeClass("active");
       $("#AboutMe").addClass("active");
