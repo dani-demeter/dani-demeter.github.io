@@ -115,12 +115,13 @@ html{
    display: inline-block;
    white-space: nowrap;
    vertical-align: middle;
-   text-align: right;
+   text-align: left;
    background-color: #2C363F;     /*  TOOLBAR COLOR HERE */
 }
 
 #toolbar .active{
    background-color: #D64933;
+   transition: 0.2s;
 }
 
 .toolbar-button{
@@ -335,13 +336,12 @@ html{
 }
 
 .big-text{
-   font-size: 400%;
-   color: var(--mycerulean);
+   font-size: 125%;
 }
 
 .highlight-text{
    text-decoration: underline var(--mycerulean);
-   font-size: 115%;
+   font-size: 105%;
 }
 
 .AboutMe-text{
@@ -368,6 +368,8 @@ html{
      text-align: center;
      vertical-align: middle;
      display: inline-block;
+     padding-bottom: 5vh;
+
   }
 
   .AboutMe-Text-Wrapper{
@@ -378,6 +380,7 @@ html{
   #AboutMe-tab{
      padding-left: 10vw;
      padding-right: 10vw;
+     padding-top: 2vh;
   }
   #profile-pic{
      width: 50vw;
