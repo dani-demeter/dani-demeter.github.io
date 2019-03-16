@@ -70,13 +70,7 @@ html{
    vertical-align: middle;
 }
 
-#profile-pic{
-   width: 30vmin;
-   height: 30vmin;
-   border-radius: 10%;
-   /* border: 4px solid var(--myrasp); */
-   /* height: auto; */
-}
+
 
 #banner{
    width: 60vmin;
@@ -122,11 +116,11 @@ html{
    white-space: nowrap;
    vertical-align: middle;
    text-align: right;
-   background-color: var(--ghostwhite);     /*  TOOLBAR COLOR HERE */
+   background-color: #2C363F;     /*  TOOLBAR COLOR HERE */
 }
 
 #toolbar .active{
-   background-color: var(--mybubbles);
+   background-color: #D64933;
 }
 
 .toolbar-button{
@@ -138,7 +132,7 @@ html{
    font-size: 4vmin;
    background-color: transparent;
    outline: none;
-   color: #1B264F;
+   color: var(--mybubbles);
 }
 
 #grid {
@@ -296,8 +290,8 @@ html{
    width: 95vmin;
 }
 #AboutMe-tab{
-   padding-left: 20vw;
-   padding-right: 20vw;
+   padding-left: 10vw;
+   padding-right: 10vw;
    padding-top: 10vh;
    padding-bottom: 10vh;
 }
@@ -315,27 +309,44 @@ html{
 }
 
 .AboutMe-Image-Wrapper{
-   width: 30vw;
+   width: 40vw;
    height: 70vh;
    display: inline-block;
    float: left;
-   text-align: center;
 }
 
 .AboutMe-Text-Wrapper{
-   width: 30vw;
+   width: 40vw;
    height: 70vh;
    display: inline-block;
+   font-size: 2vmin;
+   line-height: 4vmin;
+}
+
+#profile-pic{
+   width: 25vw;
+   border-radius: 10%;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   /* border: 4px solid var(--myrasp); */
+   /* height: auto; */
 }
 
 .big-text{
-   font-size: 200%;
+   font-size: 400%;
+   color: var(--mycerulean);
 }
 
 .highlight-text{
-   /* color: var(--myrasp); */
+   text-decoration: underline var(--mycerulean);
+   font-size: 115%;
 }
 
+.AboutMe-text{
+   margin-top: 1vmin;
+}
 
 @media only screen and (max-device-width: 825px) {
   #perma-top {
@@ -355,16 +366,28 @@ html{
      width: 80vw;
      height: auto;
      text-align: center;
+     vertical-align: middle;
+     display: inline-block;
   }
 
   .AboutMe-Text-Wrapper{
      width: 80vw;
      height: auto;
+     font-size: 3vmin !important;
   }
   #AboutMe-tab{
      padding-left: 10vw;
      padding-right: 10vw;
-     font-size: 50px !important;
+  }
+  #profile-pic{
+     width: 50vw;
+     border-radius: 10%;
+     position: relative;
+     top: 0;
+     left: 0;
+     transform: none;
+     /* border: 4px solid var(--myrasp); */
+     /* height: auto; */
   }
 }
 
