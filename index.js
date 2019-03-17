@@ -34,7 +34,7 @@ $(document).ready(function() {
       $("#fourD-text").addClass("show-text");
    });
    $("#dnd-hex").click(function() {
-         $("#portrait-wrapper").addClass("shrunkGrid");
+      $("#portrait-wrapper").addClass("shrunkGrid");
          removeTextClasses(portraithexagons, "show-text");
          $("#dnd-text").addClass("show-text");
    });
@@ -71,7 +71,6 @@ $(document).ready(function() {
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });
 });
-
 function removeTextClasses(idnames, class2remove){
    for(var i = 0; i<idnames.length; i++){
       $("#"+idnames[i]).removeClass(class2remove);
