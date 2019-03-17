@@ -54,6 +54,13 @@ a{
    position: absolute;
    overflow-x: hidden;
    font-family: 'montserrat';
+   scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none;  /* IE 10+ */
+}
+
+#site-wrapper::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 #perma-top{
@@ -107,6 +114,9 @@ a{
    /* margin-left: 48vw; */
    outline: none;
 }
+#scrollTo:hover{
+   cursor:pointer;
+}
 
 #toolbar{
    height: 10vh;
@@ -133,6 +143,10 @@ a{
    background-color: transparent;
    outline: none;
    color: var(--bubbles);
+}
+
+.toolbar-button:hover{
+   cursor:pointer;
 }
 
 #grid {
@@ -182,6 +196,9 @@ a{
    margin-bottom: 5%;
    width: 50%;
    height: 10%;
+}
+#crypto-text-closer:hover, #fourD-text-closer:hover, #dnd-text-closer:hover, #offworld-text-closer:hover, #tavrn-text-closer:hover{
+   cursor:pointer;
 }
 
 .show-text{
