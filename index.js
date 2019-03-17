@@ -50,23 +50,23 @@ $(document).ready(function() {
    });
 
     //PORTRAIT PROJECT DESCRIPTION CLICKS ASSIGNMENTS
-   $("#crypto-text").click(function(){
+   $("#crypto-text-closer").click(function(){
       $("#crypto-text").removeClass("show-text");
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });
-   $("#fourD-text").click(function(){
+   $("#fourD-text-closer").click(function(){
       $("#fourD-text").removeClass("show-text");
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });
-   $("#dnd-text").click(function(){
+   $("#dnd-text-closer").click(function(){
       $("#dnd-text").removeClass("show-text");
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });
-   $("#offworld-text").click(function(){
+   $("#offworld-text-closer").click(function(){
       $("#offworld-text").removeClass("show-text");
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });
-   $("#tavrn-text").click(function(){
+   $("#tavrn-text-closer").click(function(){
       $("#tavrn-text").removeClass("show-text");
       $("#portrait-wrapper").removeClass("shrunkGrid");
    });

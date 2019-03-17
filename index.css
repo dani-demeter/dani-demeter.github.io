@@ -37,6 +37,10 @@ html{
    scroll-behavior: smooth;
 }
 
+a{
+   color: var(--vermilion);
+}
+
 #body{
    /* overflow-x: hidden; */
    /* background-color: var(--tangerine); */
@@ -81,15 +85,6 @@ html{
    height: 60vmin;
    vertical-align: middle;
    margin-top: -30vh;
-}
-
-#name-banner{
-   font-family: 'montserrat';
-   font-size: 10vmin;
-   margin-top: -60vh;
-   color: var(--eerieblack);
-   letter-spacing: -0.2vmin;
-   /* -webkit-text-stroke: 0.1vmax var(--raspberry); */
 }
 
 #scrollTo-wrapper{
@@ -150,7 +145,7 @@ html{
 
 #portrait-wrapper{
    width: 95vw;
-   height: 86vh;
+   height: 76vh;
    padding-left: 20vw;
    margin: 0 0;
    transition: 0.5s;
@@ -164,17 +159,38 @@ html{
 #crypto-text, #fourD-text, #dnd-text, #offworld-text, #tavrn-text{
    display: none;
    width: 20vw;
-   height: 66vh;
+   /* height: 66vh; */
    float: left;
    margin-left: 5vw;
-   border: 3px solid var(--ghostwhite);
-   border-radius: 1vw;
+   padding-left: 1vw;
+   padding-right: 1vw;
+   font-size: 3vmin;
+   border: 3px solid var(--vermilion);
+   border-radius: 7px;
    background-color: var(--gunmetal);
+   /* background: -webkit-linear-gradient(top, var(--bubbles), var(--gunmetal)); */
    color: var(--ghostwhite);
+}
+
+#crypto-text-closer, #fourD-text-closer, #dnd-text-closer, #offworld-text-closer, #tavrn-text-closer{
+   background-color: var(--vermilion);
+   color: var(--ghostwhite);
+   border: none;
+   border-radius: 3px;
+   position: relative;
+   margin-left: 25%;
+   margin-bottom: 5%;
+   width: 50%;
+   height: 10%;
 }
 
 .show-text{
    display: block !important;
+}
+
+.portfolio-text-higlight{
+   text-decoration: underline var(--vermilion);
+   font-size: 110%;
 }
 
 #grid li {
@@ -273,14 +289,6 @@ html{
    filter: opacity(0%);
 }
 
-#grid li .hexagon .hex-border{
-   position: absolute;
-   z-index: 1;
-   top: 0;
-   width: 115.27%;
-   height: auto;
-}
-
 #grid li .hexagon .hex-logo:hover{
    filter: opacity(100%);
    width: 110%;
@@ -309,10 +317,6 @@ html{
    -webkit-text-stroke-color: var(--eerieblack);
 }
 
-#grid li .hex-border:hover ~ p{
-   filter: opacity(0%);
-}
-
 .hexagon:hover{
    cursor: pointer;
 }
@@ -338,9 +342,6 @@ html{
    text-align: center
 }
 
-#Portfolio-title{
-}
-
 #AboutMe-tab{
    padding-left: 10vw;
    padding-right: 10vw;
@@ -349,10 +350,8 @@ html{
 }
 
 #content-wrapper{
-   /* padding-top: 100px; */
    width: 100vw;
    height: 90vh;
-   /* background: -webkit-linear-gradient(top, var(--whitesmoke),#1B264F); */
    background: -webkit-linear-gradient(top, var(--bubbles), var(--cerulean)); /* BACKGROUND GRADIENT HERE */
 }
 
@@ -391,8 +390,6 @@ html{
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   /* border: 4px solid var(--raspberry); */
-   /* height: auto; */
 }
 
 .big-text{
