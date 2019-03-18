@@ -412,6 +412,31 @@ a{
    margin-top: 1vmin;
 }
 
+#Resume-tab{
+   width: 95vw;
+   font-size: 4vmin;
+}
+.Resume-Category{
+
+}
+
+.Resume-logo{
+   width: 10%;
+}
+
+#Resume-icons-side-wrapper{
+   width: 45vw;
+   height: 50vh;
+   margin-left: 0;
+   float: left;
+}
+
+#Resume-experience-side-wrapper{
+   width: 45vw;
+   height: 50vh;
+   float: right;
+}
+
 @media only screen and (max-device-width: 825px) {
   #perma-top {
     background-attachment: scroll;
