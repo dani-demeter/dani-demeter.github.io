@@ -124,6 +124,10 @@ $(document).ready(function() {
          $("#TA").addClass("right-arrow");
       }
    });
+   $("#download-logo").click(function(e) {
+    e.preventDefault();  //stop the browser from following
+    window.location.href = 'resources/images/cv.pdf';
+});
 });
 function removeTextClasses(idnames, class2remove){
    for(var i = 0; i<idnames.length; i++){
