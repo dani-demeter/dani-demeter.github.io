@@ -479,6 +479,9 @@ a{
    margin: 0 auto;
    top: 190vh;
 }
+.download-logo:hover{
+   cursor:pointer;
+}
 
 @media only screen and (max-device-width: 825px) {
   #perma-top {
@@ -636,6 +639,7 @@ a{
 }
 
 
+
 }
 
 @media only screen and (min-device-height: 625px) {
@@ -673,4 +677,5 @@ a{
    #Resume-icons-side-wrapper{
       border-right: 2px solid var(--gunmetal);
    }
+
 }
