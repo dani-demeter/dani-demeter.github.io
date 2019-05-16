@@ -358,7 +358,7 @@ a{
 #content-wrapper{
    width: 100vw;
    height: 90vh;
-   background: -webkit-linear-gradient(top, var(--bubbles), var(--cerulean)); /* BACKGROUND GRADIENT HERE */
+   background: -webkit-linear-gradient(top, var(--vermilion), var(--cerulean)); /* BACKGROUND GRADIENT HERE */
 }
 
 #content-wrapper .active-content{
