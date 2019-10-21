@@ -1,167 +1,109 @@
-var portraithexagons = ["crypto-text", "fourD-text", "dnd-text", "offworld-text", "tavrn-text"];
-var resumeCounters = [0,0,0,0];
+var projectsCounter = 0;
+
 $(document).ready(function() {
-   //TOOLBAR NAV BUTTON CLICKS ASSIGNMENTS
-   $("#AboutMe").click(function() {
-      $(".toolbar-button").removeClass("active");
-      $("#AboutMe").addClass("active");
-      $(".content-tab-wrapper").removeClass("active-content");
-      $("#AboutMe-tab").addClass("active-content");
+   $("#home-button").click(function() {
+      $(".show-tab").addClass("hide-tab");
+      $(".show-tab").removeClass("show-tab");
+      $("#home-wrapper").addClass("show-tab");
+      $("#home-wrapper").removeClass("hide-tab");
+      $(".selected-menu-button").removeClass("selected-menu-button");
+      $("#home-button").addClass("selected-menu-button");
    });
+   $("#skills-button").click(function() {
+      $(".show-tab").addClass("hide-tab");
+      $(".show-tab").removeClass("show-tab");
+      $("#skills-wrapper").addClass("show-tab");
+      $("#skills-wrapper").removeClass("hide-tab");
+      $(".selected-menu-button").removeClass("selected-menu-button");
+      $("#skills-button").addClass("selected-menu-button");
+   });
+   $("#projects-button").click(function() {
+      $(".show-tab").addClass("hide-tab");
+      $(".show-tab").removeClass("show-tab");
+      $("#projects-wrapper").addClass("show-tab");
+      $("#projects-wrapper").removeClass("hide-tab");
+      $(".selected-menu-button").removeClass("selected-menu-button");
+      $("#projects-button").addClass("selected-menu-button");
+   });
+   $("#work-button").click(function() {
+      $(".show-tab").addClass("hide-tab");
+      $(".show-tab").removeClass("show-tab");
+      $("#work-wrapper").addClass("show-tab");
+      $("#work-wrapper").removeClass("hide-tab");
+      $(".selected-menu-button").removeClass("selected-menu-button");
+      $("#work-button").addClass("selected-menu-button");
+   });
+   $("#aboutme-button").click(function() {
+      $(".show-tab").addClass("hide-tab");
+      $(".show-tab").removeClass("show-tab");
+      $("#aboutme-wrapper").addClass("show-tab");
+      $("#aboutme-wrapper").removeClass("hide-tab");
+      $(".selected-menu-button").removeClass("selected-menu-button");
+      $("#aboutme-button").addClass("selected-menu-button");
+   });
+//    $("#download-logo").click(function(e) {
+//     e.preventDefault();  //stop the browser from following
+//     window.location.href = 'resources/images/cv.pdf';
+// });
 
-   $("#Portfolio").click(function() {
-      $(".toolbar-button").removeClass("active");
-      $("#Portfolio").addClass("active");
-      $(".content-tab-wrapper").removeClass("active-content");
-      $("#Portfolio-tab").addClass("active-content");
+   $("#tavrn-image").click(()=>{
+      projectsCounter = 0;
+      highlightNthProject();
    });
-
-   $("#Resume").click(function() {
-      $(".toolbar-button").removeClass("active");
-      $("#Resume").addClass("active");
-      $(".content-tab-wrapper").removeClass("active-content");
-      $("#Resume-tab").addClass("active-content");
+   $("#crypto-image").click(()=>{
+      projectsCounter = 1;
+      highlightNthProject();
    });
-
-   //PORTRAIT HEXAGON CLICKS ASSIGNMENTS
-   $("#crypto-hex").click(function() {
-      $("#portrait-wrapper").addClass("shrunkGrid");
-      removeTextClasses(portraithexagons, "show-text");
-      $("#crypto-text").addClass("show-text");
+   $("#4d-image").click(()=>{
+      projectsCounter = 2;
+      highlightNthProject();
    });
-   $("#fourD-hex").click(function() {
-      $("#portrait-wrapper").addClass("shrunkGrid");
-      removeTextClasses(portraithexagons, "show-text");
-      $("#fourD-text").addClass("show-text");
+   $("#offworld-image").click(()=>{
+      projectsCounter = 3;
+      $(".selected-project").removeClass("selected-project");
+      highlightNthProject();
    });
-   $("#dnd-hex").click(function() {
-      $("#portrait-wrapper").addClass("shrunkGrid");
-         removeTextClasses(portraithexagons, "show-text");
-         $("#dnd-text").addClass("show-text");
+   $("#dnd-image").click(()=>{
+      projectsCounter = 4;
+      $(".selected-project").removeClass("selected-project");
+      highlightNthProject();
    });
-   $("#offworld-hex").click(function() {
-      $("#portrait-wrapper").addClass("shrunkGrid");
-      removeTextClasses(portraithexagons, "show-text");
-      $("#offworld-text").addClass("show-text");
+   $("#zwatches-image").click(()=>{
+      projectsCounter = 5;
+      $(".selected-project").removeClass("selected-project");
+      highlightNthProject();
    });
-   $("#tavrn-hex").click(function() {
-      $("#portrait-wrapper").addClass("shrunkGrid");
-      removeTextClasses(portraithexagons, "show-text");
-      $("#tavrn-text").addClass("show-text");
+   $("#projects-right-arrow").click(()=>{
+      projectsCounter = (projectsCounter+1)%6;
+      $(".selected-project").removeClass("selected-project");
+      highlightNthProject();
    });
-
-    //PORTRAIT PROJECT DESCRIPTION CLICKS ASSIGNMENTS
-   $("#crypto-text-closer").click(function(){
-      $("#crypto-text").removeClass("show-text");
-      $("#portrait-wrapper").removeClass("shrunkGrid");
+   $("#projects-left-arrow").click(()=>{
+      projectsCounter = (projectsCounter+5)%6;
+      highlightNthProject();
    });
-   $("#fourD-text-closer").click(function(){
-      $("#fourD-text").removeClass("show-text");
-      $("#portrait-wrapper").removeClass("shrunkGrid");
-   });
-   $("#dnd-text-closer").click(function(){
-      $("#dnd-text").removeClass("show-text");
-      $("#portrait-wrapper").removeClass("shrunkGrid");
-   });
-   $("#offworld-text-closer").click(function(){
-      $("#offworld-text").removeClass("show-text");
-      $("#portrait-wrapper").removeClass("shrunkGrid");
-   });
-   $("#tavrn-text-closer").click(function(){
-      $("#tavrn-text").removeClass("show-text");
-      $("#portrait-wrapper").removeClass("shrunkGrid");
-   });
-
-   $("#Peer-Educator").click(function(){
-      resumeCounters[0] = (resumeCounters[0]+1)%2;
-      if(resumeCounters[0]==1){
-         closeDescriptions(0);
-         $("#Peer-Educator-Description").addClass("resume-show-text");
-         $("#Peer-Educator").addClass("downwards-arrow");
-         $("#Peer-Educator").removeClass("right-arrow");
-      }else {
-         $("#Peer-Educator-Description").removeClass("resume-show-text");
-         $("#Peer-Educator").removeClass("downwards-arrow");
-         $("#Peer-Educator").addClass("right-arrow");
-      }
-   });
-   $("#VRONCOS").click(function(){
-      resumeCounters[1] = (resumeCounters[1]+1)%2;
-      if(resumeCounters[1]==1){
-         closeDescriptions(1);
-         $("#VRONCOS-Description").addClass("resume-show-text");
-         $("#VRONCOS").addClass("downwards-arrow");
-         $("#VRONCOS").removeClass("right-arrow");
-      }else {
-         $("#VRONCOS-Description").removeClass("resume-show-text");
-         $("#VRONCOS").removeClass("downwards-arrow");
-         $("#VRONCOS").addClass("right-arrow");
-      }
-   });
-   $("#VRLab").click(function(){
-      resumeCounters[2] = (resumeCounters[2]+1)%2;
-      if(resumeCounters[2]==1){
-         closeDescriptions(2);
-         $("#VRLab-Description").addClass("resume-show-text");
-         $("#VRLab").addClass("downwards-arrow");
-         $("#VRLab").removeClass("right-arrow");
-      }else {
-         $("#VRLab-Description").removeClass("resume-show-text");
-         $("#VRLab").removeClass("downwards-arrow");
-         $("#VRLab").addClass("right-arrow");
-      }
-   });
-   $("#TA").click(function(){
-      resumeCounters[3] = (resumeCounters[3]+1)%2;
-      if(resumeCounters[3]==1){
-         closeDescriptions(3);
-         $("#TA-Description").addClass("resume-show-text");
-         $("#TA").addClass("downwards-arrow");
-         $("#TA").removeClass("right-arrow");
-      }else {
-         $("#TA-Description").removeClass("resume-show-text");
-         $("#TA").removeClass("downwards-arrow");
-         $("#TA").addClass("right-arrow");
-      }
-   });
-   $("#download-logo").click(function(e) {
-    e.preventDefault();  //stop the browser from following
-    window.location.href = 'resources/images/cv.pdf';
 });
-});
-function removeTextClasses(idnames, class2remove){
-   for(var i = 0; i<idnames.length; i++){
-      $("#"+idnames[i]).removeClass(class2remove);
-   }
-}
 
-function closeDescriptions(i){
-   if(i!=0){
-      $("#Peer-Educator-Description").removeClass("resume-show-text");
-      $("#Peer-Educator").removeClass("downwards-arrow");
-      $("#Peer-Educator").removeClass("downwards-arrow");
-      $("#Peer-Educator").addClass("right-arrow");
-      resumeCounters[0] = 0;
-   }
-   if(i!=1){
-      $("#VRONCOS-Description").removeClass("resume-show-text");
-      $("#VRONCOS").removeClass("downwards-arrow");
-      $("#VRONCOS").removeClass("downwards-arrow");
-      $("#VRONCOS").addClass("right-arrow");
-      resumeCounters[1] = 0;
-   }
-   if(i!=2){
-      $("#VRLab-Description").removeClass("resume-show-text");
-      $("#VRLab").removeClass("downwards-arrow");
-      $("#VRLab").removeClass("downwards-arrow");
-      $("#VRLab").addClass("right-arrow");
-      resumeCounters[2] = 0;
-   }
-   if(i!=3){
-      $("#TA-Description").removeClass("resume-show-text");
-      $("#TA").removeClass("downwards-arrow");
-      $("#TA").removeClass("downwards-arrow");
-      $("#TA").addClass("right-arrow");
-      resumeCounters[3] = 0;
+function highlightNthProject(){
+   $(".selected-project").removeClass("selected-project");
+   $(".show-in-main").removeClass("show-in-main");
+   if(projectsCounter==0){
+      $("#tavrn-image").addClass("selected-project");
+      $("#tavrn-main").addClass("show-in-main");
+   }else if(projectsCounter==1){
+      $("#crypto-image").addClass("selected-project");
+      $("#crypto-main").addClass("show-in-main");
+   }else if(projectsCounter==2){
+      $("#4d-image").addClass("selected-project");
+      $("#4d-main").addClass("show-in-main");
+   }else if(projectsCounter==3){
+      $("#offworld-image").addClass("selected-project");
+      $("#offworld-main").addClass("show-in-main");
+   }else if(projectsCounter==4){
+      $("#dnd-image").addClass("selected-project");
+      $("#dnd-main").addClass("show-in-main");
+   }else if(projectsCounter==5){
+      $("#zwatches-image").addClass("selected-project");
+      $("#zwatches-main").addClass("show-in-main");
    }
 }

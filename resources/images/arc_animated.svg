@@ -1,0 +1,10 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<svg width="100%" height="100%" viewBox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.5;" class="">
+    <g transform="matrix(0.96,0,0,0.96,2,1)">
+        <path d="M0,50C0,22.404 22.404,0 50,0C77.596,0 100,22.404 100,50" style="fill:none;stroke:white;stroke-width:1.04px;" class="aBtGLJHd_0"></path>
+    </g>
+    <g transform="matrix(0.96,0,0,0.96,2,1)">
+        <path d="M0,50C0,22.404 22.404,0 50,0C77.596,0 100,22.404 100,50" style="fill:none;stroke:white;stroke-width:1.04px;" class="aBtGLJHd_1"></path>
+    </g>
+<style data-made-with="vivus-instant">.aBtGLJHd_0{stroke-dasharray:158 160;stroke-dashoffset:159;}.circle-draw .aBtGLJHd_0{animation:aBtGLJHd_draw 500ms ease-in-out 0ms forwards;}.aBtGLJHd_1{stroke-dasharray:158 160;stroke-dashoffset:159;}.circle-draw .aBtGLJHd_1{animation:aBtGLJHd_draw 500ms ease-in-out 500ms forwards;}@keyframes aBtGLJHd_draw{100%{stroke-dashoffset:0;}}@keyframes aBtGLJHd_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
