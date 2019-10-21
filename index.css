@@ -44,6 +44,11 @@
    --vartech2: #8e5709;
 }
 
+::-webkit-scrollbar {
+    /* width: 0px; */
+    background: transparent; /* make scrollbar transparent */
+}
+
 @font-face {
    font-family: 'Raleway';
    src: url('resources/fonts/Raleway.woff') format('woff'),
