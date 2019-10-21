@@ -735,8 +735,8 @@ a {
       stroke-opacity: 0;
    }
 }
-
 /* END TIMELINE VIVUS */
+
 .timeline-both {
    position: absolute;
    height: 20%;
@@ -859,6 +859,8 @@ a {
    top: 40%;
    left: 50%;
    transform: translate(-50%, 0);
+   opacity: 0;
+   animation: fadein 2000ms ease-in-out 0ms forwards;
    /* border: 2px solid var(--mint); */
 }
 
@@ -868,6 +870,8 @@ a {
    position: absolute;
    top: 5%;
    left: 10%;
+   opacity: 0;
+   animation: fadein 1500ms ease-in-out 1500ms forwards;
    /* transform: translate(-50%, 0); */
 }
 
@@ -877,6 +881,8 @@ a {
    position: absolute;
    top: 5%;
    right: 10%;
+   opacity: 0;
+   animation: fadein 1500ms ease-in-out 1500ms forwards;
 }
 
 #jake{
@@ -885,6 +891,8 @@ a {
    position: absolute;
    bottom: 5%;
    left: 10%;
+   opacity: 0;
+   animation: fadein 1500ms ease-in-out 2000ms forwards;
 }
 
 #hp{
@@ -893,6 +901,8 @@ a {
    position: absolute;
    bottom: 5%;
    right: 10%;
+   opacity: 0;
+   animation: fadein 1500ms ease-in-out 2000ms forwards;
 }
 
 .aboutme-image{
