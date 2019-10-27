@@ -1091,8 +1091,8 @@ a {
       width: 90vh;
       height: 14vh;
       transform-origin: center;
-      -webkit-transform: translate(40%, -50%) rotate(-90deg) !important;
-      transform: translate(40%, -50%) rotate(-90deg) !important;
+      -webkit-transform: translate(40%, -50%) rotate(90deg) !important;
+      transform: translate(40%, -50%) rotate(90deg) !important;
    }
 
    #work-wrapper{
@@ -1169,7 +1169,7 @@ a {
    }
    #timeline-rot{
       display: initial;
-      background-image: url("resources/images/timeline-rotated-up.png");
+      background-image: url("resources/images/timeline-rotated.png");
       background-repeat: no-repeat;
       background-size: contain;
    }
