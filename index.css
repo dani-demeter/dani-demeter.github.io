@@ -921,17 +921,60 @@ a {
       /* display: initial; */
    }
 
-   #home-banner-wrapper {
-      width: 50vw !important;
-      height: 50vw !important;
-      transform: translate(-50%, -50%) !important;
+   #toolbar{
+      width: 10vw !important;
    }
 
-   #skills-wrapper {
+   .logo-img{
+      width: 60%;
+      height: auto;
+      padding-top: 20px;
+   }
+
+   .menu-button{
+      width: 60%;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   .links-button{
+      width: 60%;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   #site-wrapper {
+      /* position: absolute; */
+      margin-left: 10vw;
+      font-family: 'Raleway';
+      text-align: right;
+      width: 90vw;
+      height: 100vh;
+   }
+
+   #skills-wrapper{
       position: relative;
       top: 0;
       left: 0;
       overflow-y: scroll;
+   }
+
+   #p5Canvas{
+      left: 0 !important;
+   }
+
+   .tab-wrapper{
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+   }
+
+   #home-banner-wrapper {
+      width: 50vw !important;
+      height: 50vw !important;
+      transform: translate(-50%, -50%) !important;
    }
 
    #skills-banner {
@@ -991,7 +1034,7 @@ a {
    }
 
    .all-projects-image {
-      /* display: none; */
+      display: none;
    }
 
    .main-project-image {
@@ -1017,18 +1060,26 @@ a {
       padding-top: 5%;
       box-sizing: border-box;
       font-family: 'Raleway';
+      font-size: 250%;
       /* overflow-x: scroll; */
    }
 
    #projects-right-arrow {
       position: absolute;
       right: 0 !important;
+      top: 50% !important;
+      height: 50% !important;
+      width: auto !important;
+      transform: translate(0, -50%);
    }
 
    #projects-left-arrow {
       position: absolute;
       left: 0 !important;
-      transform: translate(0, -25px);
+      top: 50% !important;
+      height: 50% !important;
+      width: auto !important;
+      transform: translate(0, -50%);
    }
 
    .timeline-both{
@@ -1040,8 +1091,12 @@ a {
       width: 90vh;
       height: 14vh;
       transform-origin: center;
-      -webkit-transform: translate(40%, -50%) rotate(90deg) !important;
-      transform: translate(40%, -50%) rotate(90deg) !important;
+      -webkit-transform: translate(40%, -50%) rotate(-90deg) !important;
+      transform: translate(40%, -50%) rotate(-90deg) !important;
+   }
+
+   #work-wrapper{
+      font-size: 200%;
    }
 
    #work-text-wrapper{
@@ -1074,7 +1129,7 @@ a {
    }
 
    .work-description{
-      padding: 0 10%;
+      padding: 2% 0 2% 0;
    }
 
    .work-description li{
@@ -1107,14 +1162,14 @@ a {
       height: 3vh;
       right: 0 !important;
       top: 0;
-      margin: 5% -10px 0 0;
+      margin-top: 4%;
    }
    .work-description{
       font-size: 80%;
    }
    #timeline-rot{
       display: initial;
-      background-image: url("resources/images/timeline-rotated.png");
+      background-image: url("resources/images/timeline-rotated-up.png");
       background-repeat: no-repeat;
       background-size: contain;
    }
@@ -1125,6 +1180,7 @@ a {
    #aboutme-wrapper{
       overflow-y: scroll;
       padding-top: 18vh;
+      font-size: 200%;
    }
 
    #aboutme-wrapper p{
@@ -1140,12 +1196,16 @@ a {
       right: auto !important;
       width: 80% !important;
       height: auto !important;
-      opacity: 1;
+      /* opacity: 1;
       animation-duration: 0s !important;
-      animation-delay: 0s !important;
+      animation-delay: 0s !important; */
       transform: translate(-50%, 0);
       margin-top: 5%;
       margin-bottom: 5%;
+      animation-delay: 200ms !important;
+   }
+
+   #portal{
    }
 
    #hp{

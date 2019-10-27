@@ -175,7 +175,14 @@ var gray;
 var w, h;
 
 function setup() {
-   w = window.innerWidth - 50;
+   w = window.innerWidth;
+   if(w>625){
+      w -= 50;
+   }else{
+      w *= 0.9;
+      numBirds = 30;
+   }
+   // w = window.innerWidth - 50;
    h = window.innerHeight;
    cnv = createCanvas(w, h);
    cnv.parent("home-wrapper");
