@@ -175,11 +175,12 @@ var gray;
 var w, h;
 
 function setup() {
-   w = window.innerWidth;
+   // w = window.innerWidth;
+   w = select("#home-wrapper").size().width;
    if(w>625){
-      w -= 50;
+      // w -= 50;
    }else{
-      w *= 0.9;
+      // w *= 0.9;
       numBirds = 30;
    }
    // w = window.innerWidth - 50;
@@ -211,7 +212,7 @@ function draw() {
 }
 
 function windowResized() {
-   w = window.innerWidth;
+   w = select("#home-wrapper").size().width;
    h = window.innerHeight;
    resizeCanvas(w, h);
 }
