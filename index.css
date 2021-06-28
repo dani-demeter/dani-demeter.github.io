@@ -1,53 +1,14 @@
 :root {
-   --whitesmoke: #F5F0F6;
-   --eerieblack: #1C1D20;
-   --grey: #C4C8D3;
-   --lightgray: #AAAAAA;
-   --ballblue: #2AB7CA;
-   --spacecadet: #241E4E;
-   --raspberry: #9E0031;
-   --tangerine: #FAA916;
-   --grape-light: #662AAF;
-   --purple-dark: #330036;
-   --gold: #FFC700;
-   --steelblue: #4A7AB4;
-   --ceil: #8FB2CE;
-   --bubbles: #E5F8FF;
-   --cerulean: #007BA7;
-   --ghostwhite: #F9FDFF;
-   --gunmetal: #2C363F;
-   --vermilion: #D64933;
-   --grape: #533A7B;
-   --firebrick: #BA1C1A;
-   --metallicseaweed: #028090;
-   --richblack: #090821;
-   --bdazzledblue: #26547C;
-   --orangeyellow: #FFD166;
-   --infrared: #EF476F;
-   --caribbeangreen: #06D6A0;
-   --jade: #00A86B;
-   --mint: #24FBCA;
-   --saffron: #e6c229;
-   --bleu: #1a8fe3;
-   --lapislazuli: #247ba0;
-   --spirodisco: #21c9ef;
-   --waterspout: #91f3f7;
-   --tealdeer: #88f7b0;
-   --aeroblue: #c3f7d6;
-   --electricblue: #7cfef0;
-   --darkmint: #037a5e;
-   --gamedes1: var(--mint);
-   --gamedes2: var(--darkmint);
-   --complang1: var(--spirodisco);
-   --complang2: var(--lapislazuli);
-   --vartech1: var(--gold);
-   --vartech2: #8e5709;
+   --offblack: #03071E;
+   --offwhite: #EFF3F5;
+   --darkblue: #021C35;
+   --gold: #F1C40F;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar { */
    /* width: 0px; */
-   background: transparent;
-}
+   /* background: transparent; */
+/* } */
 
 @font-face {
    font-family: 'Raleway';
@@ -57,6 +18,44 @@
    font-weight: normal;
    font-style: normal;
 }
+
+
+#navbar{
+   background-color: var(--offblack);
+   color: var(--offwhite);
+}
+
+.page-section{
+   width: 100%;
+   min-height: 50vh;
+}
+
+.page-section-dark{
+   background-color: var(--darkblue);
+   color: var(--offwhite);
+}
+
+.page-section-light{
+   background-color: var(--offwhite);
+   color: var(--offblack);
+}
+
+.separator{
+   width: 100%;
+   height: 10px;
+   background-color: var(--gold);
+}
+
+#picture-of-me{
+   border-radius: 50%;
+   width: 200px;
+}
+
+
+
+
+
+
 
 #p5Canvas {
    background: linear-gradient(180deg, #021c35 0%, #090821 100%);
@@ -73,14 +72,14 @@ a {
 }
 
 #body {
-   overflow: hidden;
+   /* overflow: hidden; */
    /* background-color: var(--tangerine); */
    /* background-image: radial-gradient(var(--ballblue), var(--whitesmoke)); */
    /* background: -webkit-linear-gradient(top, var(--steelblue), var(--steelblue)); */
    margin: 0 0 0 0;
-   scrollbar-width: none;
+   /* scrollbar-width: none; */
    /* Firefox */
-   -ms-overflow-style: none;
+   /* -ms-overflow-style: none; */
 }
 
 #cover {
