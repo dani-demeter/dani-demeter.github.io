@@ -190,7 +190,7 @@ function setup() {
    cnv.id("activeCanvas");
    noStroke();
    for (var i = 0; i < numBirds; ++i) {
-      var bird = new Bird(color(40, 194, 255), Math.round(Math.random() * w), Math.round(Math.random() * h), Math.random() * 3.1415);
+      var bird = new Bird(color(40, 194, 255, 100), Math.round(Math.random() * w), Math.round(Math.random() * h), Math.random() * 3.1415);
       birds.push(bird);
    }
 }
