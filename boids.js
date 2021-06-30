@@ -10,7 +10,7 @@ class Bird {
       this.dir = dir;
       this.currDir = dir;
       this.speed = 3;
-      this.noselength = 10;
+      this.noselength = 8;
       this.snl = this.noselength * 0.866;
       this.r = 50;
       this.fov = -0.5;
@@ -176,22 +176,21 @@ var w, h;
 
 function setup() {
    // w = window.innerWidth;
-   w = select("#home-wrapper").size().width;
-   if(w>625){
-      // w -= 50;
-   }else{
-      // w *= 0.9;
+   canvasSize = select("#p5Canvas").size();
+   w = canvasSize.width;
+   if (w > 625) {
+   } else {
       numBirds = 30;
    }
    // w = window.innerWidth - 50;
-   h = window.innerHeight;
+   h = canvasSize.height;
    cnv = createCanvas(w, h);
-   cnv.parent("home-wrapper");
-   cnv.position(50, 0);
-   cnv.id("p5Canvas");
+   cnv.parent("p5Canvas");
+   cnv.position(0, 0);
+   cnv.id("activeCanvas");
    noStroke();
    for (var i = 0; i < numBirds; ++i) {
-      var bird = new Bird(color(36, 251, 202), Math.round(Math.random() * w), Math.round(Math.random() * h), Math.random() * 3.1415);
+      var bird = new Bird(color(40, 194, 255), Math.round(Math.random() * w), Math.round(Math.random() * h), Math.random() * 3.1415);
       birds.push(bird);
    }
 }
@@ -212,7 +211,9 @@ function draw() {
 }
 
 function windowResized() {
-   w = select("#home-wrapper").size().width;
-   h = window.innerHeight;
+   canvasSize = select("#p5Canvas").size();
+   cnv.parent("p5Canvas");
+   w = canvasSize.width;
+   h = canvasSize.height;
    resizeCanvas(w, h);
 }
